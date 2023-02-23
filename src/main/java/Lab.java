@@ -1,5 +1,5 @@
 
-import java.util.Set;
+import java.util.*;
 
 /**
  * Sets are unordered collections of elements. Sets do not allow duplicates.
@@ -20,7 +20,9 @@ public class Lab {
      * @return a new Set<Integer> object.
      */
     public Set<Integer> createSet(){
-        return null;
+
+        Set<Integer> newSet = new HashSet<Integer>();
+        return newSet;
     }
 
     /**
@@ -29,7 +31,7 @@ public class Lab {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-        return 0;
+        return set.size();
     }
 
     /**
@@ -40,6 +42,8 @@ public class Lab {
      */
     public void addUniqueItem(Set<Integer> set, int item){
 
+        set.add(item);
+
     }
 
     /**
@@ -49,6 +53,7 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeItem(Set<Integer> set, int item){
+        set.remove(item);
 
     }
 }
